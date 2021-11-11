@@ -1,8 +1,9 @@
 # Proportions
-*The best Proportion package.*
+*The best Proportions package.*
 ## Package Features
 - Provides functions to provide proportionality for vector data
 ## Function Documentation
-```@docs
-get_proportion
+```@autodocs
+Modules = [Proportions]
+Order   = [:function, :type]
 ```
