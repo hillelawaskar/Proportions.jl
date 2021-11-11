@@ -3,6 +3,9 @@ uuid = "cc50ea96-f961-4e72-b5ee-c2bc8a08302f"
 authors = ["Hillel Awaskar"]
 version = "0.1.0"
 
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+
 [compat]
 julia = "1"
 

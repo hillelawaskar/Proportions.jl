@@ -1,14 +1,14 @@
 # Inside make.jl
 push!(LOAD_PATH,"../src/")
-using Proportion
+using Proportions
 using Documenter
 makedocs(
-         sitename = "proportion.jl",
-         modules  = [Proportion],
+         sitename = "Proportions.jl",
+         modules  = [Proportions],
          pages=[
                 "Home" => "index.md"
                ])
 deploydocs(;
-    repo="github.com/hillelawaskar/Proportion",
+    repo="github.com/hillelawaskar/Proportions",
 )
 im
