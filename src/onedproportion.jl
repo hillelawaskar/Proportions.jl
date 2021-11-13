@@ -67,4 +67,3 @@ function get_proportion_round_add1251(for_prop_arr::AbstractVector{Float64};roun
     end
     return temparr
 end
-test
