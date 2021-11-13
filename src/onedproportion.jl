@@ -1,34 +1,3 @@
-
-"""
-    add_exported(x, y)
-
-Dummy function, exported
-
-# Examples
-```jldoctest
-julia> add_exported(1, 2)
-3
-```
-"""
-function add_exported(x::Number, y::Number)
-    return x + y
-end
-"""
-    add_not_exported(x, y)
-
-Dummy function, not exported
-
-# Examples
-```jldoctest
-julia> my_module.add_not_exported(1, 2)
-3
-```
-"""
-function add_not_exported(x::Number, y::Number)
-    return x + y
-end
-
-
 """
     get_proportion(for_prop_arr::Array{Float64, 1})::Array{Float64, 1}
 Compute the proportional values for each element in the array.
@@ -42,9 +11,6 @@ julia> get_proportion([1.0,2.0,3.0,4.0,5.0,34.0000034,2423,5656.98988])
 function get_proportion(for_prop_arr::AbstractVector{Float64})::AbstractVector{Float64}
     return for_prop_arr ./ sum(for_prop_arr)
 end
-#function get_proportion(for_prop_arr::Array{Float64, 1})::Array{Float64, 1}
-#    return for_prop_arr ./ sum(for_prop_arr)
-#end
 
 """
     get_proportion_round(for_prop_arr::Array{Float64, 1};round_digits::Int64)::Array{Float64, 1}

@@ -1,7 +1,5 @@
 # Inside make.jl
-push!(LOAD_PATH,"../src/")
-using Proportions
-using Documenter
+using Documenter, Proportions
 makedocs(
          sitename = "Proportions.jl",
          modules  = [Proportions],
