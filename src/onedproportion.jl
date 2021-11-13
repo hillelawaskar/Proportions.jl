@@ -1,5 +1,35 @@
 
 """
+    add_exported(x, y)
+
+Dummy function, exported
+
+# Examples
+```jldoctest
+julia> add_exported(1, 2)
+3
+```
+"""
+function add_exported(x::Number, y::Number)
+    return x + y
+end
+"""
+    add_not_exported(x, y)
+
+Dummy function, not exported
+
+# Examples
+```jldoctest
+julia> my_module.add_not_exported(1, 2)
+3
+```
+"""
+function add_not_exported(x::Number, y::Number)
+    return x + y
+end
+
+
+"""
     get_proportion(for_prop_arr::Array{Float64, 1})::Array{Float64, 1}
 Compute the proportional values for each element in the array.
 returns a Array{Float64, 1}
