@@ -25,10 +25,10 @@ julia> get_proportion_round([1.33,1.33,1.23,1.1111],round_digits = 2)
 """
 function get_proportion_round(for_prop_arr::AbstractVector{Float64};round_digits::Int64 = 2)::AbstractVector{Float64}
     temparr=  round.(for_prop_arr ./ sum(for_prop_arr), digits=round_digits, base = 10)
-    diff = 1 - sum(temparr)
+    diff = 1 - sum(temparr) #delta naming
     if diff != 0.0
         max = argmax(temparr)
-        temparr[max] = round(temparr[max]+diff, digits=round_digits, base = 10)
+        temparr[max] =  round(temparr[max] + diff, digits=round_digits, base = 10)
     end
     return temparr
 end
@@ -67,3 +67,4 @@ function get_proportion_round_add1251(for_prop_arr::AbstractVector{Float64};roun
     end
     return temparr
 end
+test
