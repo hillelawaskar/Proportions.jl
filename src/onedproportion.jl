@@ -1,6 +1,6 @@
 """
     get_proportion(for_prop_arr::AbstractVector{Float64})::AbstractVector{Float64}
-Compute the proportional values for each element in the 1D array.
+Compute the proportional values for each element in the 1-Dim array.
 returns a AbstractVector{Float64}
 # Example
 ```
